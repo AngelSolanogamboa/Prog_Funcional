@@ -192,7 +192,6 @@ def leer_excel(dataframe,_fila,fila,data):
     data.append(_fila)
 #---------------------------------------------------------------------------------------------------------------
 def iniciar_Operaciones(libro):
-    libro.title=input('Ingresa el Nombre del Producto: ')
     inventario_inicial(libro[excel_dataframe().sheetnames[0]], 
                        libro) if libro[excel_dataframe().sheetnames[0]]['C1'].value is None  else switch_Main(excel_dataframe(),selectOper()) 
 
